@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="lib/waves.css">
+        <link rel="stylesheet" href="lib/bootstrap.css">
+        <link href="css/openSansCondensed.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/glyphicon.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+    <div id="divMain">
+
+    </div>
+        <div id="modalAffirmation" class="modal fade" style="color:black">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="flex">
+                            <h3 class="flex-grow"></h3>
+                            <button class="btn btnModal" data-dismiss="modal" style="max-height: 38px; position: absolute; right: 15px;">
+                                <span class="flex flex-center-content"><span class="glyphicon glyphicon-remove"></span></span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="modal-body" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="modalGenre" class="modal fade" style="color:black">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="flex">
+                        <h3 class="flex-grow">Select the genres you want to see</h3>
+                        <button class="btn btnModal" data-dismiss="modal" style="max-height: 38px; position: absolute; right: 15px;">
+                            <span class="flex flex-center-content"><span class="glyphicon glyphicon-remove"></span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-2">
+                        <form>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreAction" data-value="10759" type="checkbox" class="form-check-input genre" checked>
+                                    Action &amp; Adventure
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreAnimation" data-value="16" type="checkbox" class="form-check-input genre" checked>
+                                    Animation
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreComedy" data-value="35" type="checkbox" class="form-check-input genre" checked>
+                                    Comedy
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreCrime" data-value="80" type="checkbox" class="form-check-input genre" checked>
+                                    Crime
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreDocumentary" data-value="99" type="checkbox" class="form-check-input genre" checked>
+                                    Documentary
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreDrama" data-value="18" type="checkbox" class="form-check-input genre" checked>
+                                    Drama
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreFamily" data-value="10751" type="checkbox" class="form-check-input genre" checked>
+                                    Family
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreKids" data-value="10762" type="checkbox" class="form-check-input genre" checked>
+                                    Kids
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreMystery" data-value="9648" type="checkbox" class="form-check-input genre" checked>
+                                    Mystery
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreNews" data-value="10763" type="checkbox" class="form-check-input genre" checked>
+                                    News
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreSciFiAndFantasy" data-value="10765" type="checkbox" class="form-check-input genre" checked>
+                                    Sci-Fi &amp; Fantasy
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreSoap" data-value="10766" type="checkbox" class="form-check-input genre" checked>
+                                    Soap
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreTalk" data-value="10767" type="checkbox" class="form-check-input genre" checked>
+                                    Talk
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreWarAndPolitics" data-value="10768" type="checkbox" class="form-check-input genre" checked>
+                                    War &amp; Politics
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-6">
+                                <label class="form-check-label">
+                                    <input id="genreWestern" data-value="37" type="checkbox" class="form-check-input genre" checked>
+                                    Western
+                                </label>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="modalConfirmation" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4></h4>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary btnYes waves-effect" data-dismiss="modal">YES</button>
+                        <button class="btn btn-secondary btnNo waves-effect" data-dismiss="modal">NO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalConfirmation_addToWatchList" class="modal fade" style="color:black">
+        <div class="modal-dialog">
+            <div class="modal-content" style="height:40vh; font-size: 1.3rem;">
+                <div class="modal-header">
+                    <div class="flex">
+                        <h3 class="flex-grow">Select a watchlist</h3>
+                            <button class="btn btnModal" data-dismiss="modal" style="max-height: 38px; position: absolute; right: 15px;" >
+                                <span class="flex flex-center-content"><span class="glyphicon glyphicon-remove "></span></span>
+                            </button>
+                    </div>
+                </div>
+                <div class="modal-body" style = "padding: 15px;">
+                </div>
+                <div class="modal-footer">
+                    <button id="btnConfirmAddMovie" class="btn btnModal" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="loader_page" class="loader_page" style="display:none;">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                 width="288px" height="160px" viewBox="0 0 2880.000000 1602.000000"
+                 preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0,1602) scale(0.1, -0.1)"
+                   fill="transparent" stroke="white" stroke-width="200">
+                    <path class = "loader_clapperContainer" d="M19630 13939 c-129 -21 -359 -59 -510 -84 -151 -26 -538 -89 -860
+                    -141 -322 -52 -592 -96 -600 -99 -8 -3 -269 -45 -580 -95 -311 -49 -596 -97
+                    -635 -105 -38 -8 -297 -51 -575 -95 -278 -44 -554 -89 -615 -101 -103 -19
+                    -316 -53 -1805 -293 -327 -53 -629 -103 -670 -111 -41 -8 -696 -114 -1455
+                    -236 -1019 -163 -1410 -222 -1495 -225 -120 -5 -175 -18 -166 -40 3 -7 1 -14
+                    -4 -16 -5 -2 14 -100 41 -218 l50 -215 5 -4160 c2 -2288 6 -4190 8 -4226 7
+                    -147 125 -308 280 -385 l80 -39 2200 -1 c3487 -1 7411 13 7476 26 80 17 169
+                    71 234 141 59 63 84 105 120 199 l21 55 3 3866 2 3867 -22 6 c-13 3 -2045 6
+                    -4516 6 l-4493 0 3 87 3 87 1125 187 c1059 176 1482 246 2980 490 338 56 885
+                    145 1215 200 330 54 875 144 1210 199 336 55 896 148 1245 206 349 58 764 127
+                    921 152 l286 46 -20 75 c-11 42 -67 289 -126 550 -58 261 -110 475 -116 476
+                    -5 2 -116 -15 -245 -36z">
+                    </path>
+                    <path class = "loader_um_logo" d="M14545 8789 c-212 -11 -369 -49 -590 -143 -37 -16 -79 -26 -110 -26
+                    -53 0 -57 2 -166 87 -186 143 -418 62 -480 -169 -8 -30 -14 -272 -19 -803 -6
+                    -732 -7 -763 -28 -840 -62 -234 -198 -434 -375 -552 -301 -200 -754 -186
+                    -1044 32 -139 105 -260 287 -319 480 l-28 90 -7 770 c-5 521 -10 784 -18 813
+                    -53 202 -237 302 -414 224 -101 -45 -160 -140 -177 -287 -13 -114 -13 -1322 0
+                    -1499 53 -725 468 -1235 1110 -1366 226 -46 563 -46 787 -1 501 102 871 442
+                    1037 953 61 185 76 285 91 598 11 225 18 300 34 355 75 262 249 473 478 577
+                    128 58 201 71 383 71 194 0 270 -16 415 -87 171 -85 290 -207 381 -391 102
+                    -206 97 -158 105 -1035 4 -519 10 -779 18 -808 27 -103 82 -176 166 -220 66
+                    -35 176 -37 246 -6 82 38 144 116 170 216 8 29 14 291 18 808 7 734 8 768 28
+                    841 95 341 318 576 628 661 116 31 373 31 490 0 248 -67 435 -222 551 -457
+                    102 -206 97 -158 105 -1035 4 -519 10 -779 18 -808 48 -185 208 -286 374 -238
+                    76 22 154 94 193 178 l29 63 3 650 c5 1072 -12 1214 -183 1560 -227 460 -641
+                    719 -1190 744 -546 24 -865 -75 -1210 -378 -114 -100 -160 -100 -276 2 -272
+                    238 -553 357 -884 373 -55 2 -122 6 -150 7 -27 2 -113 0 -190 -4z">
+                    </path>
+                    <path class = "loader_dot_logo"d="M18963 6132 c-99 -35 -171 -116 -194 -216 -30 -134 78 -292 222 -326
+                    208 -50 395 147 335 353 -45 155 -213 243 -363 189z">
+                    </path>
+                    <path class = "loader_dash1" d="M18923 13752 c-9 -5 1 -28 32 -77 25 -39 150 -243 278 -455 213 -350
+                    237 -385 261 -385 14 0 26 5 26 10 0 6 -107 190 -238 409 -130 220 -239 404
+                    -241 410 -2 6 -17 30 -33 54 -29 41 -56 53 -85 34z">
+                    </path>
+                    <path class = "loader_dash1" d="M17708 13552 c-15 -6 -12 -16 27 -77 24 -39 150 -243 278 -455 213
+                    -350 237 -385 261 -385 14 0 26 5 26 10 0 6 -107 190 -238 409 -130 220 -239
+                    404 -241 410 -2 6 -17 30 -33 54 -28 41 -45 48 -80 34z"></path>
+                    <path class = "loader_dash1" d="M16499 13352 c-13 -6 2 -37 87 -177 57 -93 181 -299 276 -458 152
+                    -252 176 -287 196 -285 12 2 22 8 22 13 0 6 -107 190 -238 409 -130 220 -239
+                    404 -241 410 -2 6 -17 30 -33 54 -29 42 -39 47 -69 34z"></path>
+                    <path class = "loader_dash1" d="M15283 13152 c-22 -7 -22 -9 25 -82 27 -41 148 -239 270 -440 121
+                    -201 227 -373 235 -384 11 -15 19 -17 39 -10 24 9 21 14 -214 409 -132 220
+                    -242 407 -245 415 -14 34 -65 100 -76 99 -7 -1 -22 -4 -34 -7z"></path>
+                    <path class = "loader_dash1" d="M14062 12951 l-32 -6 48 -75 c27 -41 148 -239 270 -440 121 -201 227
+                    -374 235 -384 12 -16 20 -18 44 -10 l29 9 -238 400 c-132 220 -242 407 -245
+                    415 -11 27 -64 100 -71 99 -4 -1 -22 -4 -40 -8z"></path>
+                    <path class = "loader_dash1" d="M12820 12739 c0 -5 19 -40 43 -77 24 -37 146 -237 273 -446 126 -208
+                    235 -381 242 -383 7 -3 21 -2 31 3 15 8 -12 58 -221 409 -132 220 -242 407
+                    -245 415 -4 8 -18 32 -31 53 -20 31 -30 37 -58 37 -19 0 -34 -5 -34 -11z"/>
+                    <path  class = "loader_dash1" d="M11614 12533 c4 -9 127 -216 273 -460 174 -290 272 -443 282 -443 9
+                    0 21 4 27 8 6 4 -78 154 -228 407 -132 220 -242 407 -245 415 -4 8 -18 32 -31
+                    53 -19 29 -31 37 -54 37 -24 0 -29 -3 -24 -17z"></path>
+                    <path class = "loader_dash1" d="M10392 12342 c-9 -6 56 -121 244 -433 141 -233 262 -430 269 -437 7
+                    -8 25 -12 39 -10 27 3 23 10 -208 396 -130 216 -236 395 -236 398 0 3 -14 25
+                    -30 50 -30 43 -51 52 -78 36z"></path>
+                    <path class = "loader_dash1" d="M9812 11866 l3 -46 295 -233 294 -234 38 10 c21 5 36 13 33 17 -3 5
+                    -107 88 -232 186 -126 98 -255 201 -288 229 -33 27 -79 65 -103 84 l-43 34 3
+                    -47z"></path>
+                    <path class = "loader_dash1" d="M10085 10969 c-132 -105 -248 -197 -258 -204 -13 -9 -17 -23 -15 -48
+                    l3 -34 292 231 c160 127 295 234 299 239 4 4 -13 7 -37 7 -42 0 -55 -9 -284
+                    -191z"></path>
+                    <path class = "loader_dash1"d="M10918 11123 c-9 -21 -84 -207 -168 -413 -84 -206 -155 -381 -157
+                    -387 -3 -9 5 -13 24 -13 l30 0 171 425 171 425 -28 0 c-23 0 -31 -7 -43 -37z"></path>
+                    <path class = "loader_dash1" d="M12137 11153 c-3 -5 -76 -190 -162 -413 -86 -223 -159 -411 -162
+                    -418 -4 -10 3 -13 27 -10 l32 3 147 380 c81 209 154 399 164 423 l17 42 -29 0
+                    c-17 0 -32 -3 -34 -7z"></path>
+                    <path class = "loader_dash1" d="M13214 10739 c-87 -227 -161 -416 -163 -421 -2 -5 11 -8 29 -6 l32 3
+                    159 410 c87 226 159 413 159 418 0 4 -13 7 -28 7 -28 0 -30 -5 -188 -411z"></path>
+                    <path class = "loader_dash1" d="M14583 11133 c-4 -10 -78 -198 -164 -418 l-158 -400 26 -3 c14 -2 29
+                        0 33 5 5 6 266 662 319 806 10 26 9 27 -20 27 -19 0 -32 -6 -36 -17z"></path>
+                    <path class = "loader_dash1"  d="M15813 11133 c-4 -10 -78 -198 -164 -418 l-158 -400 26 -3 c14 -2 29
+                    0 33 5 6 6 266 663 319 806 10 26 9 27 -20 27 -19 0 -32 -6 -36 -17z"></path>
+                    <path class = "loader_dash1" d="M17055 11138 c-6 -17 -301 -787 -310 -811 -7 -16 -3 -18 25 -15 l32
+                    3 159 415 c87 228 159 416 159 418 0 9 -62 -1 -65 -10z"></path>
+                    <path class = "loader_dash1" d="M18130 10739 c-85 -226 -156 -415 -158 -420 -7 -18 56 -10 63 9 26
+                    65 299 790 303 805 3 13 -2 17 -25 17 -28 0 -29 0 -183 -411z"></path>
+                    <path class = "loader_dash1" d="M19515 11138 c-6 -17 -301 -787 -310 -811 -7 -16 -3 -18 25 -15 l32
+                    3 159 415 c87 228 159 416 159 418 0 9 -62 -1 -65 -10z"></path>
+                    <path class = "loader_dash1" d="M10160 12089 c-62 -25 -100 -85 -100 -157 0 -85 61 -151 148 -160
+                    177 -17 251 218 97 305 -43 24 -102 29 -145 12z m120 -34 c65 -34 90 -116 56
+                    -184 -61 -118 -246 -71 -248 63 -2 100 103 167 192 121z"></path>
+                    <path class = "loader_dash1" stroke-width="150" d="M10800 11428 c-299 -56 -378 -78 -365 -99 20 -32 56 -29 338 26 155
+                    31 290 58 300 61 11 4 17 0 17 -11 0 -12 8 -16 33 -13 28 3 32 6 29 28 -6 54
+                    -12 69 -30 67 -9 0 -154 -27 -322 -59z"></path>
+                    <path class = "loader_dash1" stroke-width="150" d="M10365 11190 l-38 -30 382 0 381 0 0 30 0 30 -344 0 -343 0 -38 -30z"></path>
+                    <path class = "loader_dash2" d="M9823 10304 c-7 -3 -13 -19 -13 -35 l0 -29 5155 0 5155 0 0 30 0 30
+                   -4417 0 c-2430 0 -4744 2 -5143 5 -399 3 -731 2 -737 -1z"></path>
+                </g>
+            </svg>
+        </div>
+
+        
+        <script src="lib/tether.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/config.js"></script>
+        <script src="lib/require.js" data-main="js/main.js"></script>
+
+    </body>
+</html>
+

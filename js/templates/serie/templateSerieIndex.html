@@ -1,0 +1,12 @@
+<div id="serieIndex">
+    <div class="dropdown">
+        <select id="dropdownSerie" class="dropdown-select">
+            <% _.each(info, function(genre) { %>
+            <option value="<%= genre.id %>"> <%= genre.name %><br>
+                <% }); %>
+        </select>
+    </div>
+    <div id="series">
+    </div>
+</div>
+<p class="pagination_bottom"></p>

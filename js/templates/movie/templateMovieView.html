@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="card">
+            <div id ="addToWatchList_div" class = "divAddMovieToWatchList flex flex-center-items">
+                <div class="flex-grow"></div>
+                <div class="flex flex-center-items">
+                    <span style="padding-right: 8px;">ADD TO WATCHLIST</span>
+                    <button class="btn btnWatchList" data-movie="empty" style="font-size: 16px;">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="card-block">
+                <div class="pictureDescription">
+                    <div class="moviePicture" style ="background-image:url(<%= info.cover %>)"/>
+                <div class="description">
+                    <div class="descriptionHead">
+                        <h3><%= info.title %></h3>
+                        <h5>Rating : <%= info.rating %></h5>
+                        <h5>Genre : <%= info.type %></h5>
+                        <h5>Release date : <%= info.release_date %></h5>
+                        <br>
+                    </div>
+                    <div class="descriptionText" style="text-align: justify">
+                        <h5>Description :</h5>
+                        <p><%= info.description %></p>
+                    </div>
+                </div>
+                </div>
+                <div id="divmoviePreview" class="preview">
+                    <h3>Trailer <img src="img/movie/youtube-icon.png" width="25px"></h3>
+                    <iframe class = framePreview
+                            src="<%= info.preview %>">
+                    </iframe>
+                    <div>
+                        <a href="<%= info.itune_link %>"><img src="img/itunes-logo.png" width="150px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

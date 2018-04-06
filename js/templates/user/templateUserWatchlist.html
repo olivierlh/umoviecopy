@@ -1,0 +1,10 @@
+<% _.each(watchlists, function(watchlist) { %>
+<div class="flex flex-column flex-center-items watchlistRow" data-id="<%= watchlist.id %>">
+    <div>
+        <span class="bold">Name : </span> <%= watchlist.name %>
+    </div>
+    <div>
+        This list contains <span class="bold"><%= watchlist.movies.length %></span> movies!
+    </div>
+</div>
+<% }); %>

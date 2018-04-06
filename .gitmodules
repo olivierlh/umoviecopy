@@ -1,0 +1,3 @@
+[submodule "UmovieApi"]
+	path = UmovieApi
+	url = https://github.com/JulieTetrault/UMovie.git

@@ -1,0 +1,42 @@
+(GET) status : retourne le status du serveur (200 OK si disponible)
+(POST) login : demande le token de connection. Retourne email, name, token et id.
+(GET) logout : déconnecte le user côté serveur.
+(POST) signup : enregistre un nouvel utilisateur. (reçoie en paramètre name, email, password. Renvoie, email, name, id).
+(GET) tokenInfo : retourne le user associé à un token.
+(GET) genres/movies : retourne les genres reliés aux films.
+(GET) genres/tvshows : retourne les genres reliés aux séries télévisées.
+(GET) search : Recherche dans la base de donnée d'itunes les films et séries télévisé en un seul appel. Pour rechercher : (voir section "search")
+(GET) search/movies : Recheche dans la base de donnée d'itunes de films itune. (voir section "search")
+(GET) search/tvshows/episodes : Recheche dans la base de donnée d'itunes d'épisode de séries télévisées d'itune. (voir section "search")
+(GET) search/tvshows/seasons : Recheche dans la base de donnée d'itunes de saison de séries télévisées d'itune. (voir section "search")
+(GET) search/actors : 
+(GET) users : 
+(GET) users/:id : 
+(GET) search/users : 
+(POST) follow : 
+(DELETE) follow/:id : 
+(GET) actors/:id : 
+(GET) actors/:id/movies : 
+(GET) movies/:id : 
+(GET) tvshows/seasons/:id : 
+(GET) tvshows/seasons/:id/episodes : 
+(GET) watchlists : Retourne toutes les watchlists existantes. Doit être filtrer côté front-end.
+(GET) watchlists/:id : Affiche la watchlist correspondant à l'id demandé.
+(POST) watchlists : Création d'une watchlist.
+(PUT) watchlists/:id : Modification e la watchlist à l'id demandé.
+(POST) watchlists/:id/movies : permet d'ajouter un film à la watchlist correspondant à l'id demandé.
+(DELETE) watchlists/:id/movies/:trackId : retire le film avec le trackId de la watchlist correspondant.
+(DELETE) watchlists/:id : SUpprimer une watchlist avec son ID.
+
+URL_ENCODING_JAVASCRIPT :
+    How To do :
+        encodeURIComponent(str);
+        encodeURI(str);
+
+        ex. :
+            var myUrl = "http://example.com/index.html?param=1&anotherParam=2";
+            var myOtherUrl = "http://example.com/index.html?url=" + encodeURIComponent(myUrl);
+    SEARCH (paramètre url) :
+        q : terme de recherche
+        limit : limite du nombre
+        genre : id du genre

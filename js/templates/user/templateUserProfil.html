@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="card">
+            <div class="card-block">
+                <div class="flex flex-center-items flex-column">
+
+                    <div class="profilePictureHolder">
+                        <div id="profilePictureSlideMenu" class="profilePictureSlideMenu profil" style="background-image: url('<%= data.picture %>')">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h5><span class="bold">Name :</span> <%= data.name %></h5>
+                        <h5><span class="bold">Email :</span> <%= data.email %></h5>
+                        <h5><span class="bold">Following :</span> </h5>
+                        <div class="text-center userRowContainer">
+                            <% if (data.following.length === 0) { %>
+                                This user is a lone wolf.
+                            <% } else { %>
+                                <% _.each(data.following, function(user) { %>
+                                    <div class="userRow" data-id="<%= user.id %>">
+                                        <%= user.name %>
+                                    </div>
+                                <% }) %>
+                            <% } %>
+                        </div>
+                        <h5><span class="bold">WatchLists :</span> </h5>
+                        <div id="divWatchlistsUser" class="userRowContainer">
+
+                        </div>
+                    </div>
+                    <% if (addBtnFollow) { %>
+                        <div class="flex p-1">
+                            <button class="btn btn-primary" id="btnFollowUnfollowIt">Follow/Unfollow</button>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

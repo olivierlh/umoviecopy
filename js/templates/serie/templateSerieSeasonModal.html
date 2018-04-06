@@ -1,0 +1,37 @@
+<div style="height: 100%; overflow: hidden; display: flex; flex-direction: column;">
+    <div class = "seasonPicture" style="display: inline-flex; background-image: url(<%= info.cover %>); background-size: cover; max-height:50%">
+        <div class="col-xs-6">
+            <div style="background-image: url(<%= info.cover %>); background-size: contain; background-repeat: no-repeat; background-position: center; height:100%; width: auto; margin:auto; "></div>
+        </div>
+        <div class="col-xs-6" style="flex:1; overflow-y: scroll; overflow-x: hidden; padding:15px;">
+            <input type="text" id="searchBarSerie" class="full-width" placeholder="Type here to search an episode" style="border-bottom: 1px solid rgba(0,0,0,0.5);"/>
+            <div id="episodeHandler">
+                <% _.each(info.episodes, function(info) { %>
+                    <h6 class="showHideEpisode" data-name="<%= info.trackName %>"><a class="serieEpisode" data-episode = "<%= info.trackId %>" ><span style= "color:#355db3; font-weight: 600;"><%= info.trackNumber %> </span>:<span> <%= info.trackName %></span></a></h6>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+    <div class="episodePreviewDiv" style = "flex:1; overflow-y: scroll;">
+        <h3 style="color:white; text-align: center;">Episode <%= info.episodes[0].trackNumber%></h3>
+        <div style="height:calc(100% - 38px);">
+
+            <div id="episodeDescription" class="col-xs-6" style=" padding: 0px 20px 20px 20px; width: 100%;">
+                <h6 style="color:white;">Title: <%= info.episodes[0].trackName%></h6>
+                <h6 style="color:white;">Duration :  <%= info.episodes[0].trackDuration%>  min</h6>
+                <h6 style="color:white;">Description :</h6>
+                <div class="descriptionEpisode">
+                    <p> <%= info.episodes[0].trackDescription%></p>
+                </div>
+            </div>
+            <div class="preview" style="padding:0px; position: relative; top: -5px;">
+                <video class = "videoEpisode" controls="controls">
+                    <source src="<%= info.episodes[0].trackPreview %>" type="video/mp4">
+                </video>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+

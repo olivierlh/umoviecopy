@@ -1,0 +1,16 @@
+<div class="btnGoToPage" data-trackId="<%= info.id%>" data-trackType="<%= info.typeResult%>" style ="display:<%= info.addType%>">
+    <div style="margin: 20px;">
+        <p data-trackId="<%= info.id%>" data-trackType="<%= info.typeResult%>" style="text-align: center; margin-bottom: 10px; height: 30px; position: relative;">
+            <span data-trackId="<%= info.id%>" data-trackType="<%= info.typeResult%>" style="border-radius: 5px; padding: 6px 10px; font-size: 0.7em; line-height: 0.7em; font-weight: 600; text-transform: uppercase; border: 1px solid #0158fd; margin-left: 10px;"><%= info.typeResult%></span>
+            <button class="btn btnWatchList btnAddWatchlist" data-trackType="<%= info.typeResult%>" data-movie="empty" data-trackId="<%= info.id%>" style="font-size: 16px;display:<%= info.addBtn%>; position: absolute; top: 0; right: 0; padding:15px" >
+                <span class="glyphicon glyphicon-plus" style="font-size: 12px; position: absolute;left: 10px; top: 9px;"></span>
+            </button>
+        </p>
+        <img class="coverImageFilter" src="<%= info.coverResult%>" data-trackId="<%= info.id%>" data-trackType="<%= info.typeResult%>">
+        <div class="affichage-detail">
+            <p data-trackId="<%= info.id%>" data-trackType="<%= info.typeResult%>"><%= info.nameResult%></p>
+        </div>
+    </div>
+</div>
+
+

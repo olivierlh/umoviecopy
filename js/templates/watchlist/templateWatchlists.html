@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="card">
+            <div class="card-block">
+                <div>
+                    <button id="btnCreateNewWatchList" class="btn btnWatchList waves-effect right">New watchlist</button>
+                </div>
+                <div class="full-width" style="border-bottom: 1px solid rgba(255,255,255,0.5);">
+                    <h4>Your watchlists</h4>
+                </div>
+                <div id="divUserWatchlists">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="newWatchListModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Create a new watchlist</h4>
+            </div>
+            <div class="modal-body">
+                <div class="flex watchlistContent">
+                    <div class="flex-grow">
+                        Enter a name for your watchlist and press create.
+                    </div>
+                    <div class="inputWatchlist flex-grow">
+                        <input type="text" class="form-control" id="watchlistName" placeholder="Watchlist name">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btnSendNewWatchList" class="btn btnWatchList waves-effect" data-dismiss="modal">Create</button>
+                <button class="btn btn-secondary waves-effect" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="watchListInfoModal" class="modal fade">
+</div>

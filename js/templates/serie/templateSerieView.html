@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="card">
+            <div class="card-block">
+                <div class="pictureDescription">
+                    <div class="moviePicture" style ="background-image:url(<%= info.cover %>)"/>
+                    <div class="description">
+                        <div class="descriptionHead">
+                            <h3><%= info.title %></h3>
+                            <h5>Rating : <%= info.rating %></h5>
+                            <h5>Genre : <%= info.type %></h5>
+                            <h5>Release date : <%= info.release_date %></h5>
+                            <br>
+                        </div>
+                        <div class="descriptionText" style="text-align: justify">
+                            <h5>Description :</h5>
+                            <p><%= info.description %></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-width" style="border-bottom: 1px solid rgba(255,255,255,0.5);">
+                    <h4>Seasons</h4>
+                </div>
+                <div class="actorMovies">
+                    <div id = "divSeasonsList" class="row" style="margin:inherit; ">
+                    </div>
+
+                </div>
+                <div class="preview">
+                    <h3>Trailer <img src="img/movie/youtube-icon.png" width="25px"></h3>
+                    <iframe class = framePreview
+                            src="<%= info.preview %>">
+                    </iframe>
+                    <a href="<%= info.itune_link %>"><img src="img/itunes-logo.png" width="150px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

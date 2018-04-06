@@ -1,0 +1,56 @@
+<div class="modal-dialog" style="color: black; display: block;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="flex">
+                <h3 class="flex-grow" >View a watchlist </h3>
+                    <button class="btn btnModal" style="max-height: 38px; position: absolute; right: 15px;" data-dismiss="modal">
+                        <span class="flex flex-center-content"><span class="glyphicon glyphicon-remove"></span></span>
+                    </button>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div id="divModalWatchlistInfo" style=" position: absolute; width: 100%; height: 100%; overflow: scroll; padding: 15px;">
+                <form>
+                    <input type="hidden" id="inputWatchlistId" value="<%= info.id %>">
+                    <div class="form-group row">
+                        <label for="inputEditWatchListName" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEditWatchListName" style = "color: black" placeholder="name" value="<%= info.name %>">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEditWatchListName" class="col-sm-2 col-form-label">Add a movie  </label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputSearchMovie" style = "color: black" placeholder="movie name">
+                        </div>
+                        <div class="searchButton col-sm-2">
+                            <a class="btn btnWatchList waves-effect" id="btnSearchMovie">Search</a>
+                        </div>
+                    </div>
+                    <div style="width: 50%; min-width:250px; margin-bottom: 8px;" class="bold">Movies</div>
+                    <div>
+                        <% _.each(info.movies, function(movie) { %>
+                        <div class="flex flex-center-content movieWatchListEntry" data-trackId="<%= movie.id %>">
+                            <div class="flex p-1 full-width">
+                                <div class="flex-grow">
+                                    <span class="bold"><%= movie.original_title %></span>
+                                    <a data-trackId="<%= movie.id %>" data-trackName="<%= movie.original_title %>">
+                                        <div class="btnMovie moviePictureActor" style="background-image: url('<%= movie.poster_path %>')"></div>
+                                    </a>
+                                </div>
+                                <div class=" flex flex-column flex-center-items flex-center-content p-1">
+                                    <a id="<%= movie.id %>" class="btn btnWatchList waves-effect btnDeleteMovie">Remove</a>
+                                </div>
+                            </div>
+                        </div>
+                        <% }); %>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="btnSaveWatchlist" class="btn btnWatchList btnGlowEffect waves-effect" data-dismiss="modal">Save</button>
+            <button id="btnDeleteWatchlist"  class="btn btn-secondary btnGlowEffect waves-effect" data-dismiss="modal">Delete</button>
+        </div>
+    </div>
+</div>

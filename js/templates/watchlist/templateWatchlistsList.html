@@ -1,0 +1,13 @@
+<div class="flex flex-wrap">
+    <% _.each(watchlists, function(watchlist) { %>
+        <div class="moviePictureActorHolder">
+            <div class="flex flex-column flex-center-items">
+                <span class="bold"><%= watchlist.name %></span>
+                <a class="btnViewWatchList" data-watchlist="<%= watchlist.id %>">
+                    <div class="moviePictureActor" style="background-image: url('img/watchlist.png'); margin-left: 10px;"></div>
+                </a>
+            </div>
+        </div>
+    <% }); %>
+</div>
+

@@ -1,0 +1,142 @@
+/* Variables */
+/* Shadows for elevation */
+.shadow-2 {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.33);
+  transition: box-shadow 0.1s linear;
+}
+.shadow-4 {
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.33);
+  transition: box-shadow 0.1s linear;
+}
+.shadow-6 {
+  box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.33);
+  transition: box-shadow 0.1s linear;
+}
+.shadow-8 {
+  box-shadow: 0px 8px 16px 2px rgba(0, 0, 0, 0.33);
+  transition: box-shadow 0.1s linear;
+}
+.shadow-16 {
+  box-shadow: 0px 16px 32px 4px rgba(0, 0, 0, 0.33);
+  transition: box-shadow 0.1s linear;
+}
+.shadow-24 {
+  box-shadow: 0px 24px 48px 6px rgba(0, 0, 0, 0.33);
+  transition: box-shadow 0.1s linear;
+}
+/* Button styling */
+.btn:focus,
+.btn:active:focus {
+  outline: none;
+}
+.btn {
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.33);
+  transition: box-shadow 0.1s linear;
+}
+.btn:hover:not(:disabled),
+.btn:active:not(:disabled),
+.btn:active:hover:not(:disabled),
+.btn:active:focus:not(:disabled) {
+  box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.33);
+  transition: box-shadow 0.1s linear;
+}
+.btn:hover:disabled,
+.btn:active:disabled,
+.btn:active:hover:disabled,
+.btn:active:focus:disabled {
+  background-color: yellow;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:hover:disabled {
+  background-color: #f00;
+  border: none;
+  color: #fff !important;
+}
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:active:hover,
+.btn-secondary:active:focus,
+.btn-secondary:hover:disabled {
+  background-color: #000;
+  border: none;
+  color: #fff !important;
+}
+.btn-secondary.invert,
+.btn-secondary:hover.invert,
+.btn-secondary:active.invert,
+.btn-secondary:focus.invert,
+.btn-secondary:active:hover.invert,
+.btn-secondary:active:focus.invert,
+.btn-secondary:hover:disabled.invert {
+  background-color: #fff;
+  color: #000 !important;
+}
+.btn-info,
+.btn-info:hover,
+.btn-info:active,
+.btn-info:focus,
+.btn-info:active:hover,
+.btn-info:active:focus,
+.btn-info:hover:disabled {
+  background-color: #05c;
+  border: none;
+  color: #fff !important;
+}
+/* Input styling */
+input.form-control,
+input.form-control:active,
+input.form-control:focus {
+  background-color: transparent;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+input.form-control.txt-icon,
+input.form-control:active.txt-icon,
+input.form-control:focus.txt-icon {
+  padding-left: 24px;
+}
+input.form-control.txt-label,
+input.form-control:active.txt-label,
+input.form-control:focus.txt-label {
+  padding-left: 90px;
+}
+input.form-control.valid,
+input.form-control:active.valid,
+input.form-control:focus.valid {
+  border-bottom-color: #00ff00;
+}
+input.form-control.invalid,
+input.form-control:active.invalid,
+input.form-control:focus.invalid {
+  border-bottom-color: #ff0000;
+}
+input.form-control:focus {
+  border-bottom: 1px solid white;
+}
+select.form-control,
+select.form-control:active,
+select.form-control:focus {
+  background-color: transparent;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+select.form-control option,
+select.form-control:active option,
+select.form-control:focus option {
+  color: black;
+}
+select.form-control:focus {
+  border-bottom: 1px solid white;
+}

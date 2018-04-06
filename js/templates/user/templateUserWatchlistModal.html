@@ -1,0 +1,23 @@
+<div class="modal-dialog modal-small-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="flex">
+                <h4 class="flex-grow"><%= info.name %></h4>
+                <button class="btn btnModal" data-dismiss="modal" style="max-height: 38px; position: absolute; right: 15px;" >
+                    <span class="flex flex-center-content"><span class="glyphicon glyphicon-remove "></span></span>
+                </button>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="bold">Movies</div>
+            <hr>
+            <div class="movieRowContainer">
+                <% _.each(info.movies, function(movie) { %>
+                    <div class="movieRow">
+                        <span class="bold"><%= movie.original_title %></span>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+</div>

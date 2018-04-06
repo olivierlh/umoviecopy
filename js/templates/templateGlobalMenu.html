@@ -1,0 +1,87 @@
+<div id="divNavbar">
+    <div id="filtersContainer" style="display:none;padding-bottom: 10px;">
+        <div style="max-width: 20px;">
+            <button class="filterBtn btn btnWatchList waves-effect right" data-btnFilter = "movie" style="margin-top: 0px; padding:10px; background-color: rgba(53, 93, 179, 0);border: 1px solid rgba(236, 238, 239, 0.34);">Movies</button>
+        </div>
+        <div style="max-width: 20px;">
+            <button class="filterBtn btn btnWatchList waves-effect right" data-btnFilter = "tv" style="margin-top: 0px; padding:10px; background-color: rgba(53, 93, 179, 0);border: 1px solid rgba(236, 238, 239, 0.34);">Series</button>
+        </div>
+        <div style="max-width: 20px;">
+            <button class="filterBtn btn btnWatchList waves-effect right" data-btnFilter = "person" style="margin-top: 0px; padding:10px; background-color: rgba(53, 93, 179, 0); border: 1px solid rgba(236, 238, 239, 0.34);">Actors</button>
+        </div>
+        <div style="max-width: 20px;">
+            <button class="filterBtn btn btnWatchList waves-effect right" data-btnFilter = "user" style="margin-top: 0px; padding:10px; background-color: rgba(53, 93, 179, 0);border: 1px solid rgba(236, 238, 239, 0.34);">Users</button>
+        </div>
+        <div style="max-width: 20px;">
+            <button id="btnFilterGenre" class="filterBtn btn btnWatchList waves-effect right" data-btnFilter = "genres" style="margin-top: 0px; padding:10px; background-color: rgba(53, 93, 179, 0);border: 1px solid rgba(236, 238, 239, 0.34);">Genres</button>
+        </div>
+    </div>
+    <div id="searchContainer" style="display:none; z-index: -1;">
+        <ul id="searchContainerList" style = "margin: 0; list-style-type: none; padding: 0;">
+
+        </ul>
+        <div id="searchContainerDiv" >
+
+        </div>
+    </div>
+    <div class="full-width container flex flex-center-items" style="height: 64px; z-index: 2; background-color: black;">
+        <span id="btnToggleMenuLeft" class="glyphicon glyphicon-menu-hamburger"></span>
+        <div id="searchBar" class="flex-center-items">
+            <span id="searchIcon" class = "glyphicon  glyphicon-search"></span>
+            <div class="flex-center-items" style="display:none;">
+                <input type="text" name="search" placeholder="Search for movie, tv show, artist ..." style="flex:1; background-color: black; border: none; outline: none;
+                color: white; height: 62px; width: 100vw;">
+                <div style="max-width: 20px;">
+                    <button id="filters" class="btn btnWatchList waves-effect right" style="margin-top: 0px; padding:10px;">Show filters</button>
+                </div>
+                <span id="closeSearchIcon" class = "glyphicon  glyphicon-remove" style = "flex:1; margin-left: 10px; max-width: 210px;"></span>
+            </div>
+        </div>
+        <div class="marginLogo text-xs-center" style="flex-grow: 1;">
+            <img src="img/logo.png" style="height: 64px; padding: 8px 0px;">
+        </div>
+    </div>
+</div>
+
+<div id="divSlideMenuLeft" class="flex flex-column">
+    <div class="text-xs-center justify-content-center" style="padding: 8px;">
+        <div class="row flex flex-center-items flex-center-content">
+            <div class="offset-xs-2 col-xs-2 profilePictureHolder">
+                <div id="profilePictureSlideMenu" class="profilePictureSlideMenu" style="background-image: url('img/profile.jpg')">
+                </div>
+            </div>
+            <div class="col-xs-8">
+                <h5 class="text-capitalize"><span id="slideMenuUserName"></span></h5>
+                <span id="slideMenuEmailAddress"></span>
+            </div>
+        </div>
+    </div>
+    <ul style="flex-grow: 1;">
+        <li class="liNav waves-effect waves-light">
+            <a href="#index" class="menuText">Home <span class="right"></span></a>
+        </li>
+        <li class="liNav waves-effect waves-light">
+            <a href="#watchlists" class="menuText">Watchlists <span class="right"></span></a>
+        </li>
+        <li class="liNav waves-effect waves-light">
+            <a href="#movies/index" class="menuText">Movies <span class="right"></span></a>
+        </li>
+        <li class="liNav waves-effect waves-light">
+            <a href="#series/index" class="menuText">TV shows <span class="right"></span></a>
+        </li>
+        <li class="liNav waves-effect waves-light">
+            <a href="#actors/index" class="menuText">Actors <span class="right"></span></a>
+        </li>
+        <li class="liNav waves-effect waves-light">
+            <a id="myProfile" href="#users/profile" class="menuText">My profile <span class="right"></span></a>
+        </li>
+    </ul>
+    
+    <div class="text-xs-center waves-effect waves-light" style="padding: 8px; border-top: 1px solid rgba(255,255,255,0.1);">
+        <a href="javascript:void(0);" id="logout" class="menuText caps" style="font-size: 32px;">Logout</a>
+    </div>
+</div>
+
+<div id="divRegionMainContainer" class="headerVisible">
+    <div id="divRegionMain"></div>
+</div>

@@ -1,0 +1,29 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4>Add a movie to a watchlist</h4>
+        </div>
+        <div class="modal-body overflow-auto-x">
+            <div id="divModalWatchlistInfo" style=" position: absolute; width: 100%; height: 100%; overflow: scroll; padding: 15px;">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Select a movie  </label>
+                        <div class="selectMovie col-sm-8">
+                            <select id="selectMovieToAdd">
+                                <% _.each(movies, function(movie) { %>
+                                <option value="<%= movie.id %>"><%= movie.title %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                        <div class="btnAdd col-sm-2">
+                            <button class="btn btnWatchList waves-effect" id="btnAddMovieToWatchlist" data-dismiss="modal">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary waves-effect" data-dismiss="modal" id="closeModalSearch">Close</button>
+        </div>
+    </div>
+</div>

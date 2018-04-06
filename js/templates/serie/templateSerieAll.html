@@ -1,0 +1,12 @@
+<% _.each(info, function(serie) { %>
+<div data-trackId="<%= serie.trackId %>" class="seriesDisplay">
+    <div data-trackId="<%= serie.trackId %>" class="serie-cover">
+        <img class="cover-image"
+             src="<%= serie.artwork %>">
+    </div>
+    <div data-trackId="<%= serie.trackId %>" class="affichage-detail">
+        <a class="affichage-title" title="<%= serie.name %>"> <%= serie.name %> <span class="paragraph-end"></span> </a>
+        <a class="affichage-year"> <%= serie.year %> </a>
+    </div>
+</div>
+<% }); %>

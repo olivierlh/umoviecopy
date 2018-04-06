@@ -1,0 +1,12 @@
+<% _.each(info, function(movie) { %>
+<div data-trackId="<%= movie.trackId %>" class="moviesDisplay">
+    <div data-trackId="<%= movie.trackId %>" class="movie-cover">
+        <img class="cover-image"
+             src="<%= movie.artwork %>">
+    </div>
+    <div data-trackId="<%= movie.trackId %>" class="affichage-detail">
+        <a class="affichage-title" title="<%= movie.name %>"> <%= movie.name %> <span class="paragraph-end"></span> </a>
+        <a class="affichage-year"> <%= movie.year %> </a>
+    </div>
+</div>
+<% }); %>

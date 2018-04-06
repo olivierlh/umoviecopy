@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="card">
+            <div class="card-block">
+                <div class="pictureDescription">
+                    <div class="moviePicture" style ="background-image:url(<%= info.cover %>)"/>
+                    <div class="description">
+                        <div class="descriptionHead">
+                            <h2><%= info.actor %></h2>
+                            <h3>Primary genre: <%= info.type %></h3>
+                        </div>
+                        </br>
+                        <div class="descriptionText" style="text-align: justify">
+                            <h5>Biography :</h5>
+                            <p><%= info.description %><a href="<%= info.descriptionLink %>" style = "color: #7b9fec">See full bio here.</a> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-width" style="border-bottom: 1px solid rgba(255,255,255,0.5);">
+                    <h4>Associated movies</h4>
+                </div>
+                <div class="actorMovies">
+                    <div class="row" id = "divMoviesList" style="margin:inherit; ">
+                    </div>
+                </div>
+                <a href="<%= info.artistLinkUrl %>"><img src="img/itunes-logo.png" width="150px"></a>
+            </div>
+        </div>
+    </div>
+</div>
